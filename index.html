@@ -1,1 +1,196 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Luckie Interns 2018</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/freezeframe_styles.min.css">
+
+  <script src="js/jquery-3.3.1.js"></script>
+  <script src="js/jquery.animate-shadow.js"></script>
+  <script src="js/jquery.color-2.1.2.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/freezeframe.min.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="row">
+    <div class="twelve columns" style="margin-top: 1%; padding-right: 1%;">
+      <button class="party-button u-pull-right" id="party-button">Party</button>
+      <button class="business-button u-pull-right active" id="business-button">Business</button>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns" style="margin-top: 2.5%; text-align: center">
+        <h2 style="margin-bottom: 0">Luckie Interns</h2>
+        <h4>Summer 2018</h4>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns video">
+        <img src="images/640.png" alt="Intern Video Placeholder">
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns call-to-action">
+        <button id="call">Click me!</button>
+      </div>
+    </div>
+    <div class="row">
+      <div class="twelve columns centered arrow" id="arrow">
+        <img src="images/icons/icons8-double-down-50.png" alt="">
+      </div>
+    </div>
+    <div class="cards" id="cards">
+      <div class="row" style="margin-top: 20vh;">
+        <div class="four columns card" id="card_matt">
+          <img src="images/matt_still.png" alt="Matt Collins" class="icon" id="icon_matt">
+          <h4 class="card-name">Matt Collins</h4>
+          <h6 class="card-position">Intern</h6>
+          <div class="bio-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
+             mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
+              esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
+            <a href="#social-links">twitter // instagram // linkedin</a>
+          </div>
+        </div>
+        <div class="four columns card" id="card_anna">
+          <img src="images/anna_still.png" alt="Anna Garner" class="icon" id="icon_anna">
+          <h4 class="card-name">Anna Gardner</h4>
+          <h6 class="card-position">Intern</h6>
+          <div class="bio-text">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
+             mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
+              esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
+            <a href="#social-links">twitter // instagram // linkedin</a>
+          </div>
+        </div>
+        <div class="four columns card" id="card_jackie">
+          <img src="images/jackie_still.png" alt="Jackie Prine" class="icon" id="icon_jackie">
+          <h4 class="card-name">Jackie Prine</h4>
+          <h6 class="card-position">Intern</h6>
+        </div>
+      </div>
+      <div class="row">
+        <div class="four columns card spacer" id="card_austin">
+          <img src="images/austin_still.png" alt="Austin Sprague" class="icon" id="icon_austin">
+          <h4 class="card-name">Austin Sprague</h4>
+          <h6 class="card-position">Intern</h6>
+        </div>
+        <div class="four columns card spacer" id="card_jp">
+          <img src="images/jp_still.png" alt="JP Tyndall" class="icon" id="icon_jp">
+          <h4 class="card-name">JP Tyndall</h4>
+          <h6 class="card-position">Intern</h6>
+        </div>
+        <div class="four columns card spacer" id="card_carly">
+          <img src="images/carly_still.png" alt="Carly Wages" class="icon" id="icon_carly">
+          <h4 class="card-name">Carly Wages</h4>
+          <h6 class="card-position">Intern</h6>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="arrow_box" id="desc">
+        <div class="desc-matt container">
+          <span class="close-button" aria-hidden="true">&uarr;</span>
+          <h4>Matt Collins</h4>
+          <h6>Analytics</h6>
+            <p>My name is Matt Collins. I am a senior at the University of Georgia studying economics and international business and after graduation I will pursue a career in data analytics. My interest in international business comes from my love of traveling and learning about different cultures, and through my time abroad, mainly in Argentina and other parts of South America, I have become fluent in Spanish. In my free time, I am an avid golfer and soccer fan, mainly of Atlanta United and the English Premier League. I also love to discover new music, sometimes mixing songs into my own creation and sharing it with my friends.</p>
+            <a href="mailto:matt.collins57@gmail.com">matt.collins57@gmail.com</a><p class="slashes"> //</p>
+            <a href="tel:404-394-4536">404-394-4536</a>
+        </div>
+        <div class="desc-anna container">
+          <span class="close-button" aria-hidden="true">&uarr;</span>
+          <h4>Anna Gardner</h4>
+          <h6>Intern</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
+             mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
+              esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
+            <a href="#social-links">twitter</a><p class="slashes"> //</p>
+            <a href="#insta">instagram</a><p class="slashes"> //</p>
+            <a href="#linkedin">linkedin</a>
+        </div>
+        <div class="desc-jackie container">
+          <span class="close-button" aria-hidden="true">&uarr;</span>
+          <h4>Jackie Prine</h4>
+          <h6>Intern</h6>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
+             mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
+              esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
+            <a href="#social-links">twitter</a><p class="slashes"> //</p>
+            <a href="#insta">instagram</a><p class="slashes"> //</p>
+            <a href="#linkedin">linkedin</a>
+          </div>
+          <div class="desc-austin container">
+            <span class="close-button" aria-hidden="true">&uarr;</span>
+            <h4>Austin Sprague</h4>
+            <h6>Intern</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
+               mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
+                esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
+              <a href="#social-links">twitter</a><p class="slashes"> //</p>
+              <a href="#insta">instagram</a><p class="slashes"> //</p>
+              <a href="#linkedin">linkedin</a>
+          </div>
+          <div class="desc-jp container">
+            <span class="close-button" aria-hidden="true">&uarr;</span>
+            <h4>JP Tyndall</h4>
+            <h6>Intern</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
+               mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
+                esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
+              <a href="#social-links">twitter</a><p class="slashes"> //</p>
+              <a href="#insta">instagram</a><p class="slashes"> //</p>
+              <a href="#linkedin">linkedin</a>
+          </div>
+          <div class="desc-carly container">
+            <span class="close-button" aria-hidden="true">&uarr;</span>
+            <h4>Carly Wages</h4>
+            <h6>Intern</h6>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
+               mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
+                esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
+              <a href="#social-links">twitter</a><p class="slashes"> //</p>
+              <a href="#insta">instagram</a><p class="slashes"> //</p>
+              <a href="#linkedin">linkedin</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="footer centered">
+        <p>Site made by JP Tyndall</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>
