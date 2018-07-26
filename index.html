@@ -22,6 +22,7 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/freezeframe_styles.min.css">
+  <link rel="stylesheet" href="css/animate.css">
 
   <script src="js/jquery-3.3.1.js"></script>
   <script src="js/jquery.animate-shadow.js"></script>
@@ -46,28 +47,30 @@
   </div>
   <div class="container">
     <div class="row">
-      <div class="twelve columns" style="margin-top: 2.5%; text-align: center">
-        <h2 style="margin-bottom: 0">Luckie Interns</h2>
-        <h4>Summer 2018</h4>
+      <div class="twelve columns header" style="margin-top: 2.5%; text-align: center">
+        <h2 style="margin-bottom: 0" class="animated fadeInDown">Luckie Interns</h2>
+        <h4 class="animated fadeInUp delay-1s">Summer 2018</h4>
       </div>
     </div>
-    <div class="row">
+    <!-- <div class="row">
       <div class="twelve columns video">
         <img src="images/640.png" alt="Intern Video Placeholder">
       </div>
-    </div>
+    </div> -->
+    <div class="cta">
     <div class="row">
       <div class="twelve columns call-to-action">
-        <button id="call">Click me!</button>
+        <button class="animated fadeIn delay-2s cta-button" id="call"><span class="cta-text">See more</span></button>
       </div>
     </div>
     <div class="row">
       <div class="twelve columns centered arrow" id="arrow">
-        <img src="images/icons/icons8-double-down-50.png" alt="">
+        <img class="animated fadeIn delay-2s" src="images/icons/icons8-double-down-50.png" alt="">
       </div>
     </div>
+  </div>
     <div class="cards" id="cards">
-      <div class="row" style="margin-top: 20vh;">
+      <div class="row">
         <div class="four columns card" id="card_matt">
           <img src="images/matt_still.png" alt="Matt Collins" class="icon" id="icon_matt">
           <h4 class="card-name">Matt Collins</h4>
@@ -123,68 +126,95 @@
             <p>My name is Matt Collins. I am a senior at the University of Georgia studying economics and international business and after graduation I will pursue a career in data analytics. My interest in international business comes from my love of traveling and learning about different cultures, and through my time abroad, mainly in Argentina and other parts of South America, I have become fluent in Spanish. In my free time, I am an avid golfer and soccer fan, mainly of Atlanta United and the English Premier League. I also love to discover new music, sometimes mixing songs into my own creation and sharing it with my friends.</p>
             <a href="mailto:matt.collins57@gmail.com">matt.collins57@gmail.com</a><p class="slashes"> //</p>
             <a href="tel:404-394-4536">404-394-4536</a>
+            <a class="expand-text">Read more</a>
+            <div class="more-text">
+              <p>As the Analytics intern, I used different analytic software tools like Tableau and SPSS to make sense of raw data we received from our clients and other sources, such as the census or even the CDC. The data that we pull insights from on the analytics team is used to drive marketing strategy and is ultimately used to focus our creative solutions.</p>
+              <p>The most useful thing I learned during this internship is that the majority of a data analyst’s time is spent cleaning data. While this is something I had heard before I started this internship, I found it to be true during my time here. At first, I didn’t want to believe it, but I quickly learned that if I took the time to make the data easier to work with up front then everything would come together a lot smoother. It may be an unsexy truth but it has made my work a lot less stressful.</p>
+              <p>During my time here, I was tasked with pulling CDC vaccination rate data to help facilitate a pitch to a large pharmaceutical company. The Luckie pharma team trusted me to give them accurate data and let me sit in on the pitch call with the potential client. During the call, the potential client made a point to say that they were impressed with the data we had pulled, and it felt fantastic to have such an impact, even as an intern. </p>
+              <p>My biggest piece of advice I would give is to always make yourself available to your bosses. You will get so much more out of your time here if you always have a project to work on (plus it makes the day go by a lot faster). If you want a leg up on other applicants in the analytics field, you should familiarize yourself with analytics tools like Excel and Tableau and having knowledge of SQL would really put you over the top. That being said I was only familiar with Excel when I started here so don’t let inexperience deter <you!></you!></p>
+            </div>
         </div>
         <div class="desc-anna container">
           <span class="close-button" aria-hidden="true">&uarr;</span>
           <h4>Anna Gardner</h4>
           <h6>Intern</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
-             mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
-              esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
-            <a href="#social-links">twitter</a><p class="slashes"> //</p>
-            <a href="#insta">instagram</a><p class="slashes"> //</p>
-            <a href="#linkedin">linkedin</a>
+            <p>Hi there, I’m Anna Gardner and I’m an upcoming third-year at the University of Georgia with a major in advertising and minors in fashion merchandising and theatre. I am involved in the executive boards of UGA HEROs, UGA Order of Omega, and UGA SMA as well as my sorority Tri Delt, and I like to stay busy (until I want to quit everything and become a beet farmer in Iowa, but that’s beside the point). After athletically peaking in high school as a tennis player, my interests now involve going to music festivals with friends, hanging with my dog-son Mojo, and driving around Athens wreaking havoc. Some of my special talents include playing Hot Cross Buns on the recorder, saying the alphabet backwards at inappropriate times, and doing that weird heel click thing.</p>
+            <a href="mailto:annakgardner@gmail.com">annakgardner@gmail.com</a>
+            <a class="expand-text">Read more</a>
+            <div class="more-text">
+              <p>As Strategy Intern at Luckie, I have been able to work under some incredible minds who have both taught me and allowed me to learn for myself. A lot of my learning has come from just observing and being able to shadow, being able to see the different interactions and levels that strategy entails. Also, I have been working on creating a brand health formula survey that can be used to track brand health within all of our SBUs as well as seeing progression of brand opinion.</p>
+              <p>I have learned a lot from working at Luckie. The most helpful lesson that I have found from this summer is that it is important to keep our business human. From the interactions of working with a client to keeping the aspect of humanity when actually creating a campaign, it truly is all about the people you work with and for. I think this lesson was definitely put into perspective when I went to the Cannes Lions Festival for Creativity this summer in June because everything that was spoken about or that won at the festival went back to the idea of making advertising a human experience.  </p>
+              <p>Throughout my summer experience at Luckie, my favorite project I have been able to work on is the brand health survey creation because it has allowed me to use real clients and our competitors to create something that will actually be used for the Luckie client models even after I leave. Being able to dissect consumer perspectives on clients and actually be of true benefit to Luckie has been rewarding and also an incredible opportunity to add to my portfolio.</p>
+              <p>Some advice I would give to future interns here at Luckie is to understand that your voice and opinions are beneficial and taken into much consideration by the people here because you are just as valued as the other full-time employees here. Because of this, being able to find your voice and insert your ideas are important, especially because it shows that you care and want to add to the progression of the company.</p>
+            </div>
         </div>
         <div class="desc-jackie container">
           <span class="close-button" aria-hidden="true">&uarr;</span>
           <h4>Jackie Prine</h4>
           <h6>Intern</h6>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
-             mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
-              esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
-            <a href="#social-links">twitter</a><p class="slashes"> //</p>
-            <a href="#insta">instagram</a><p class="slashes"> //</p>
-            <a href="#linkedin">linkedin</a>
+            <p>My name is Jacqueline (Jackie) (Jac) (J) Prine. I’m a senior Advertising major at the University of Georgia. I also have a Studio Art minor and New Media certificate. I’ve worked as a creative at the UGA student newspaper, The Red & Black, and also as an Art Director on UGA’s full service student run ad agency, Talking Dog. This year I’ll be on the exec board of Ad Club as the VP of Digital, Communications, and Design. My goal is to attend portfolio school after graduation and eventually become a bona fide Art Director, helping to creatively solve marketing problems with design thinking. Non-professionally, I’m a twin and also a rescue pug mom who routinely cleans out thrift stores of t-shirts, old post cards, and coffee mugs.</p>
+            <a href="mailto:jacmprine@gmail.com">jacmprine@gmail.com</a>
+            <a class="expand-text">Read more</a>
+            <div class="more-text">
+              <p>My official title this summer was Creative Intern. I helped the Art Director and Senior Copywriter with a variety of projects within Luckie. I assisted with the conception and creation of graphics for clients within brand guidelines. A big part of my job was to assist with the production of email marketing templates. </p>
+              <p>With most of the creative team being in the Birmingham office, I had a big role in the smaller team in Atlanta. Working directly alongside experienced professionals in my chosen field was super beneficial in seeing how agencies are run and how creative processes are conducted.</p>
+              <p>My favorite project was definitely getting to work on the Express Oil Exchange account. Doing a rehaul of their email marketing strategy was really fun because we got to update their brand by creating sleek, effective emails that produced high conversion rates.</p>
+              <p>My advice would be don’t be afraid to ask for help. There are no stupid questions, and if you’re struggling with a task, your superiors can give you advice that’ll fix it and you use might even use daily. Even something as simple as really handy Photoshop tricks the art director Maria taught me have already been incorporated in all my design practices. Full time employees, especially at Luckie, have tons of amazing experience under their belt and are happy to share guidance. Remember, you’re here to learn!</p>
+            </div>
           </div>
           <div class="desc-austin container">
             <span class="close-button" aria-hidden="true">&uarr;</span>
             <h4>Austin Sprague</h4>
             <h6>Intern</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
-               mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
-                esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
-              <a href="#social-links">twitter</a><p class="slashes"> //</p>
-              <a href="#insta">instagram</a><p class="slashes"> //</p>
-              <a href="#linkedin">linkedin</a>
+              <p>Ciao! My name is Austin Sprague and even though I am a Georgia Bulldog at heart, I see myself on all levels except physical as a wolf. Throughout my career at The University of Georgia, I have challenged myself to follow my dreams of working in advertising. I have taken the road less traveled into the advertising world, as I am about to finish my degree in Communication Studies. I believe that building meaningful relationships and enhancing communication skills are at the forefront of being successful in any area of business and in life.
+ Outside of the office, I am a competitive runner who competes for the mean machine in red and black on both the cross country and national championship track & field team. Since I put more miles on my legs than my car on most days, you can commonly find me watching the latest and greatest movies at the local movie theater (thank you, MoviePass).</p>
+              <a href="mailto:Austin.Sprague@uga.edu">Austin.Sprague@uga.edu</a>
+              <a class="expand-text">Read more</a>
+              <div class="more-text">
+                <p>One of my favorite parts about the Luckie internship experience compared to others I have had in the past is that I received a meaningful title with Luckie, rather than simply being labeled an undergraduate intern. Having the title of Strategic Engagement intern allowed me to realize that I was seen as a part of the Luckie family rather than a seasonal outsider. I had the pleasure of working in the Pharma SBU to assist four incredible Luckie employees: Adam Meadows, Michael Tanner, Monique Boiser and Natasha Kawher.</p>
+                <p>Luckie was able to open my eyes to the world of advertising agencies. Before coming to Luckie, I had thought that advertising only consisted of a strong creative team that knew how to make exciting content. After my first week at Luckie, I was blown away at the number of departments that all worked together to support and propel all of the clients and teams forward. In addition to understanding the ins and outs of an agency, my skills as a researcher improved dramatically. My first research project took me around 2-3 weeks to complete, but as the summer progressed I was able to produce a similar research project in just one short week.</p>
+                <p>My favorite project I was able to work on this summer related to one of Luckie’s healthcare clients. I was tasked with putting together a competitive analysis that dissected one of the client’s competitors. I enjoyed this project because I was able to dive head first into the world of advertising strategy. Having the opportunity to discover how the client’s competitors were getting their messages across multiple platforms allowed me to creatively inform the client what their strengths and weaknesses within their market were.</p>
+                <p>My biggest piece of advice would be to fully immerse yourself in all things Luckie. Don’t be afraid to talk to and ask for help from people outside of your specific group. Everyone at Luckie is extremely supportive and wants to learn from you as much as you want to learn from them.</p>
+              </div>
           </div>
           <div class="desc-jp container">
             <span class="close-button" aria-hidden="true">&uarr;</span>
             <h4>JP Tyndall</h4>
             <h6>Intern</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
-               mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
-                esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
-              <a href="#social-links">twitter</a><p class="slashes"> //</p>
-              <a href="#insta">instagram</a><p class="slashes"> //</p>
-              <a href="#linkedin">linkedin</a>
+              <p>Hiya! My name is JP, and I am a senior at Georgia Gwinnett College pursuing a degree in ITEC with a specialization in Digital Media. I have a passion for web development and design and am always looking to learn the newest tricks of the trade. I speak fluent German and plan to use my development skills to travel the world while working! I am a thorough music lover, I play many instruments and spend most of my time listening to all sorts of songs. When fall comes around you can find me cheering on the Auburn Tigers, and the rest of the year sulking that fall isn’t here yet.</p>
+              <a href="mailto:jptyndalljr@gmail.com">jptyndalljr@gmail.com</a><p class="slashes"> //</p>
+              <a href="https://linkedin.com/jptyndalljr">linkedin</a>
+              <a class="expand-text">Read more</a>
+              <div class="more-text">
+                <p>My internship at Luckie was a little different in that I spent most of my time working alongside the development team in real time. I actively contributed to several projects and even completed one on my own. It was satisfying to know that my work allowed the agency to better serve its clients and meet its deadlines. I also built this website!</p>
+                <p>Over the course of my internship I learned what it really means to be a developer – something that I now consider an indispensable piece of knowledge, and something that can’t be taught in a classroom. After working together with the development team, project managers, and QA, I have learned what it’s like to be able to work with a team to push a deliverable to a client, and I learned to enjoy it! Not only did I learn many new technologies, but I learned how Luckie’s development processes speed up development and deployment time and allow for efficient workflows. After this internship I have no doubt I will feel confident standing on my own two feet in a sea of junior developers.</p>
+                <p>My favorite project this summer was one that I was essentially left alone to work on – and it couldn’t have been a better opportunity. I was tasked with the majority of the building of a website for one of Luckie’s smaller clients. I worked with Wordpress and several frameworks to build and flesh out content for the majority of the site and learned so much along the way. I definitely had an “aha” moment with the incredible usefulness of a powerful CMS like WP.</p>
+                <p>To future interns: don’t be afraid to knock at the door – there’s always someone willing to give you a chance as long as you show yourself as willing to work to earn it. Be sure to always ask questions first and be prepared to get stuck a million times because that’s just how the dev world works, especially when you’re first starting out… but don’t forget to have fun too, working with a development team is a blast! Also, the big P word in the world of development and design: portfolio! Make one and show off what you can do!</p>
+              </div>
           </div>
           <div class="desc-carly container">
             <span class="close-button" aria-hidden="true">&uarr;</span>
             <h4>Carly Wages</h4>
             <h6>Intern</h6>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum atque nostrum voluptas optio sapiente totam, repellendus excepturi minus reiciendis,
-               mollitia non beatae, omnis sint, cupiditate nisi quaerat eaque ratione architecto. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia ducimus alias
-                esse, eum provident nam fugiat aspernatur possimus, assumenda perferendis tenetur. Animi sint possimus voluptate libero laborum quo assumenda facilis.</p>
-              <a href="#social-links">twitter</a><p class="slashes"> //</p>
-              <a href="#insta">instagram</a><p class="slashes"> //</p>
-              <a href="#linkedin">linkedin</a>
+              <p>Hi there! My name is Carly Wages, and I am a five-foot short cheese connoisseur who whole-heartedly believes in the power of a good nap and smart advertising.
+I’m in my senior year at the University of Georgia studying Advertising and Spanish, and I hope to pursue a career in creative when I am all grown up. Outside of class, I work as the Co-Director of Talking Dog, UGA’s full-service, student-run advertising and PR agency. I also love to read, write, and pick apart low-grade movies hidden in the dark side of Netflix. But when I am not doing these things, I am being the proud mom to two gangly and goofy chocolate labs. I am driven by my love for creative work, and my desire to provide my puppers with the life that they deserve.
+</p>
+              <a href="mailto:carlywages@gmail.com">carlywages@gmail.com</a><p class="slashes"> //</p>
+              <a href="tel:678-825-7120">678-825-7120</a>
+              <a class="expand-text">Read more</a>
+              <div class="more-text">
+                <p>I spent my summer at Luckie making my fellow millennials proud by working as the Social Media intern. And though I did spend much of my days perusing Twitter and the like, it wasn’t solely for leisure—I was compiling social audits to help inform strategy. Most of my time, however, was spent compiling social audits for the Luckie brand and several of its clients. I conducted cross-platform and competitive social analyses, monitored conversation trends, and then compiled that data and its insights into reports to be used to inform the strategy that would be used to drive creative.</p>
+                <p>I’ve learned a great many things from my Luckie summer, but I think the most helpful thing that I have learned is that you truly never stop learning, and that you never should stop! Advertising is a rapidly and continuously evolving industry, and as such, no one should ever feel like they know everything that there is to know. In fact, it is the recognition that you still have a lot to learn that drives you to work harder, think faster, and ask the important questions.</p>
+                <p>My favorite project that I worked on this summer was the social analysis I compiled for the US Civil Rights Trail, a travel client of Luckie. This project was particularly cool not just because there was a large and informative conversation set to monitor, but also because I was able to learn a bunch about US civil rights simply by monitoring the conversation surrounding it. I had a blast putting the report together and was able to provide a wealth of insights that continued the excitement-train into Strategy. There is certainly something to be said about having fun while you work!</p>
+                <p>Your internship is what you make it to be, and the best thing you can do for yourself is to use your voice. Ask your mentors when you need help, speak up in meetings when you have something useful to add, and don’t be afraid to let your supervisors know what exactly it is that you’re interested in doing—even if it doesn’t fit neatly into your job description. Your supervisors have just as much to learn from you as you do from them, so use your time to listen, learn and contribute.</p>
+              </div>
           </div>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="footer centered">
-        <p>Site made by JP Tyndall</p>
+        <p>Site made <span class="cta-text">with love</span> by JP Tyndall</p>
       </div>
     </div>
   </div>

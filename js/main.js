@@ -1,6 +1,7 @@
 // Controls
 var isFancy = false;
 var cardToggled = false;
+var isFirstVisit = true;
 
 // Hover effect for party button
 $(function(){
@@ -69,17 +70,18 @@ $(function(){
 
 // Matt
 $(function(){
-  $("#icon_matt").mouseenter(function(){
-    $(this).attr('src', '/images/matt.gif');
+  $("#card_matt").mouseenter(function(){
+    $('#icon_matt').attr('src', '/images/matt.gif');
   });
-  $("#icon_matt").mouseleave(function(){
-    $(this).attr('src', '/images/matt_still.png');
+  $("#card_matt").mouseleave(function(){
+    $('#icon_matt').attr('src', '/images/matt_still.png');
   });
 });
 
 $(function(){
   $("#card_matt").click(function(){
     // toggleMatt();
+    $('.more-text').fadeOut();
     toDesc(".desc-matt");
   });
 });
@@ -136,17 +138,18 @@ function toggleMatt() {
 
 // Anna
 $(function(){
-  $("#icon_anna").mouseenter(function(){
-    $(this).attr('src', '/images/anna.gif');
+  $("#card_anna").mouseenter(function(){
+    $("#icon_anna").attr('src', '/images/anna.gif');
   });
-  $("#icon_anna").mouseleave(function(){
-    $(this).attr('src', '/images/anna_still.png');
+  $("#card_anna").mouseleave(function(){
+    $("#icon_anna").attr('src', '/images/anna_still.png');
   });
 });
 
 $(function(){
   $("#card_anna").click(function(){
     // toggleAnna();
+    $('.more-text').fadeOut();
     toDesc(".desc-anna");
   });
 });
@@ -183,16 +186,17 @@ function toggleAnna() {
 // Jackie
 $(function(){
   $(function(){
-    $("#icon_jackie").mouseenter(function(){
-      $(this).attr('src', '/images/jackie.gif');
+    $("#card_jackie").mouseenter(function(){
+      $("#icon_jackie").attr('src', '/images/jackie.gif');
     });
-    $("#icon_jackie").mouseleave(function(){
-      $(this).attr('src', '/images/jackie_still.png');
+    $("#card_jackie").mouseleave(function(){
+      $("#icon_jackie").attr('src', '/images/jackie_still.png');
     });
   });
 
   $("#card_jackie").click(function(){
     // toggleJackie();
+    $('.more-text').fadeOut();
     toDesc(".desc-jackie");
   });
 });
@@ -228,51 +232,54 @@ function toggleJackie() {
 
 // Austin
 $(function(){
-  $("#icon_austin").mouseenter(function(){
-    $(this).attr('src', '/images/austin.gif');
+  $("#card_austin").mouseenter(function(){
+    $("#icon_austin").attr('src', '/images/austin.gif');
   });
-  $("#icon_austin").mouseleave(function(){
-    $(this).attr('src', '/images/austin_still.png');
+  $("#card_austin").mouseleave(function(){
+    $("#icon_austin").attr('src', '/images/austin_still.png');
   });
 });
 
 $(function(){
   $("#card_austin").click(function(){
     // toggleJackie();
+    $('.more-text').fadeOut();
     toDesc(".desc-austin");
   });
 });
 
 // JP
 $(function(){
-  $("#icon_jp").mouseenter(function(){
-    $(this).attr('src', '/images/jp.gif');
+  $("#card_jp").mouseenter(function(){
+    $("#icon_jp").attr('src', '/images/jp.gif');
   });
-  $("#icon_jp").mouseleave(function(){
-    $(this).attr('src', '/images/jp_still.png');
+  $("#card_jp").mouseleave(function(){
+    $("#icon_jp").attr('src', '/images/jp_still.png');
   });
 });
 
 $(function(){
   $("#card_jp").click(function(){
     // toggleJackie();
+    $('.more-text').fadeOut();
     toDesc(".desc-jp");
   });
 });
 
 // Carly
 $(function(){
-  $("#icon_carly").mouseenter(function(){
-    $(this).attr('src', '/images/carly.gif');
+  $("#card_carly").mouseenter(function(){
+    $("#icon_carly").attr('src', '/images/carly.gif');
   });
-  $("#icon_carly").mouseleave(function(){
-    $(this).attr('src', '/images/carly_still.png');
+  $("#card_carly").mouseleave(function(){
+    $("#icon_carly").attr('src', '/images/carly_still.png');
   });
 });
 
 $(function(){
   $("#card_carly").click(function(){
     // toggleJackie();
+    $('.more-text').fadeOut();
     toDesc(".desc-carly");
   });
 });
@@ -283,8 +290,14 @@ $(function(){
 //   });
 // });
 
-if(isFancy) {
-  $("html").css({background: "url(https://media.giphy.com/media/KvJQ4pC09Gw5a/giphy.gif)"})
+$(function(){
+  $('.expand-text').click(function(){
+    $('.more-text').fadeIn();
+  });
+});
+
+if(!isFirstVisit) {
+  $("html").css({background: "#fff"})
 }
 
 $(function(){
@@ -300,9 +313,15 @@ $(function(){
 
 $(function(){
   $("#call").click(function(){
-    $('html, body').animate({
-      scrollTop: $("#cards").offset().top
-    }, 1000);
+    $('.header').animate({
+      paddingTop: '0'
+    }, 800);
+    $('.cta').fadeOut();
+    $('.cards').fadeIn();
+    $('.footer').fadeIn();
+    // $('html, body').animate({
+    //   scrollTop: $("#cards").offset().top
+    // }, 1000);
   })
 })
 
@@ -318,10 +337,16 @@ function partyTime() {
   console.log("partay!");
   $("#business-button").removeClass("active");
   $("#party-button").addClass("active");
+  $(".header h2").css({background: "#fff"});
+  $(".header h4").css({background: "#fff"});
+  $("html").css({background: "url(https://media.giphy.com/media/KvJQ4pC09Gw5a/giphy.gif)"});
+  $('.card').addClass("rainbow");
 }
 
 function workHours() {
   console.log("back to work!");
   $("#party-button").removeClass("active");
   $("#business-button").addClass("active");
+  $("html").css({background: "#fff"});
+  $('.card').removeClass("rainbow");
 }

@@ -31,6 +31,7 @@
 
 body {
   overflow-x: hidden;
+  /* background: #222 url(https://media.giphy.com/media/DYTSL2PUwy8BW/giphy.gif) no-repeat center fixed; */
 }
 
 a {
@@ -45,6 +46,15 @@ a:hover {
   text-align: center;
 }
 
+.header {
+  padding-top: 10em;
+  /* color: white; */
+}
+
+.cta {
+  /* margin-top: 10em; */
+}
+
 .icon {
   width: 80%;
   height: auto;
@@ -55,6 +65,10 @@ a:hover {
   display: none;
   text-align: left;
   padding: 1em 4em;
+}
+
+.cards {
+  display: none;
 }
 
 .card {
@@ -92,6 +106,56 @@ a:hover {
 .call-to-action {
   text-align: center;
   margin-top: 5rem;
+}
+
+.cta-text {
+  animation: textAnimate 5s linear infinite alternate;
+  background: linear-gradient( 92deg, #95d7e3, #eb76ff );
+  background: -webkit-linear-gradient( 92deg, #95d7e3, #eb76ff );
+  background-size:600vw 600vw;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 40px 0;
+  &::after {
+    position: absolute;
+    content: attr(data-text);
+    left: 0;
+    right: 0;
+    background: none;
+    box-shadow: 2px 4px 2px rgba(0,0,0,0.50);
+    z-index: -1;
+  }
+}
+
+.rainbow {
+  animation: textAnimate 5s linear infinite alternate;
+  background: linear-gradient( 92deg, #95d7e3, #eb76ff );
+  background: -webkit-linear-gradient( 92deg, #95d7e3, #eb76ff );
+  background-size:600vw 600vw;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &::after {
+    position: absolute;
+    content: attr(data-text);
+    left: 0;
+    right: 0;
+    background: none;
+    box-shadow: 2px 4px 2px rgba(0,0,0,0.50);
+    z-index: -1;
+  }
+}
+
+@keyframes textAnimate {
+  from {
+    filter: hue-rotate(0deg);
+    background-position-x: 0%;
+
+  }
+  to {
+    filter: hue-rotate(360deg);
+    background-position-x: 600vw;
+
+  }
 }
 
 .arrow_box {
@@ -172,8 +236,20 @@ a:hover {
   display: inline;
 }
 
+.expand-text {
+  float: right;
+  cursor: pointer;
+}
+
+.more-text {
+  padding-top: 2em;
+  display: none;
+}
+
 .footer {
-  margin-top: 10rem;
+  display: none;
+  text-align: center;
+  padding-top: 2em;
 }
 
 .party-button {
